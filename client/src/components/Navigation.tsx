@@ -9,17 +9,13 @@ export default function Navigation() {
 
   const navItems = [
     { label: "Home", href: "/" },
-    { label: "Services", href: "#services" },
-    { label: "Equipment", href: "#equipment" },
-    { label: "Portfolio", href: "#portfolio" },
-    { label: "Contact", href: "#contact" },
+    { label: "Services", href: "/services" },
+    { label: "Equipment", href: "/equipment" },
+    { label: "Portfolio", href: "/portfolio" },
+    { label: "Contact", href: "/contact" },
   ];
 
-  const handleNavClick = (href: string) => {
-    if (href.startsWith("#")) {
-      const element = document.querySelector(href);
-      element?.scrollIntoView({ behavior: "smooth" });
-    }
+  const handleNavClick = () => {
     setIsMenuOpen(false);
   };
 
@@ -35,22 +31,25 @@ export default function Navigation() {
 
           <div className="hidden md:flex items-center gap-8">
             {navItems.map((item) => (
-              <button
+              <Link
                 key={item.href}
-                onClick={() => handleNavClick(item.href)}
+                href={item.href}
                 data-testid={`link-${item.label.toLowerCase()}`}
-                className="text-sm font-medium text-foreground hover-elevate px-3 py-2 rounded-md transition-colors"
+                className={`text-sm font-medium hover-elevate px-3 py-2 rounded-md transition-colors ${
+                  location === item.href ? 'text-primary' : 'text-foreground'
+                }`}
               >
                 {item.label}
-              </button>
+              </Link>
             ))}
-            <Button
-              onClick={() => handleNavClick("#contact")}
-              data-testid="button-get-quote"
-              className="uppercase tracking-wide"
-            >
-              Get Quote
-            </Button>
+            <Link href="/contact">
+              <Button
+                data-testid="button-get-quote"
+                className="uppercase tracking-wide"
+              >
+                Get Quote
+              </Button>
+            </Link>
           </div>
 
           <Button
@@ -69,22 +68,26 @@ export default function Navigation() {
         <div className="md:hidden bg-background border-b border-border">
           <div className="px-4 sm:px-6 py-4 space-y-2">
             {navItems.map((item) => (
-              <button
+              <Link
                 key={item.href}
-                onClick={() => handleNavClick(item.href)}
+                href={item.href}
+                onClick={handleNavClick}
                 data-testid={`mobile-link-${item.label.toLowerCase()}`}
-                className="block w-full text-left text-foreground hover-elevate px-4 py-3 rounded-md transition-colors font-medium"
+                className={`block w-full text-left hover-elevate px-4 py-3 rounded-md transition-colors font-medium ${
+                  location === item.href ? 'text-primary' : 'text-foreground'
+                }`}
               >
                 {item.label}
-              </button>
+              </Link>
             ))}
-            <Button
-              onClick={() => handleNavClick("#contact")}
-              data-testid="mobile-button-get-quote"
-              className="w-full uppercase tracking-wide mt-2"
-            >
-              Get Quote
-            </Button>
+            <Link href="/contact" onClick={handleNavClick}>
+              <Button
+                data-testid="mobile-button-get-quote"
+                className="w-full uppercase tracking-wide mt-2"
+              >
+                Get Quote
+              </Button>
+            </Link>
           </div>
         </div>
       )}
