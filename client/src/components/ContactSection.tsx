@@ -184,9 +184,11 @@ export default function ContactSection() {
                 <div>
                   <h4 className="font-semibold text-foreground mb-1">Studio Location</h4>
                   <p className="text-sm text-muted-foreground">
-                    Red Ark Cinema Studios<br />
-                    Film City, Mumbai<br />
-                    Maharashtra, India
+                    Red Ark Cinema Studio<br />
+                    Upper Zone Housing Board Building<br />
+                    Santhi Nagar<br />
+                    Thiruvananthapuram<br />
+                    Kerala
                   </p>
                 </div>
               </div>
@@ -200,8 +202,8 @@ export default function ContactSection() {
                 <div>
                   <h4 className="font-semibold text-foreground mb-1">Phone</h4>
                   <p className="text-sm text-muted-foreground">
-                    +91 123 456 7890<br />
-                    +91 098 765 4321
+                    8330022223<br />
+                    9845007944
                   </p>
                 </div>
               </div>
@@ -215,8 +217,7 @@ export default function ContactSection() {
                 <div>
                   <h4 className="font-semibold text-foreground mb-1">Email</h4>
                   <p className="text-sm text-muted-foreground">
-                    info@redarkcinema.com<br />
-                    bookings@redarkcinema.com
+                    redarkstudios@gmail.com
                   </p>
                 </div>
               </div>
