@@ -49,7 +49,7 @@ export default function ProjectTypesSection() {
           {projectTypes.map((project) => (
             <Card
               key={project.title}
-              className="p-6 hover-elevate transition-all duration-300 group"
+              className="p-6 hover-elevate transition-all duration-300 group light-reflection"
               data-testid={`card-project-${project.title.toLowerCase().replace(/\s+/g, '-')}`}
             >
               <div className="w-14 h-14 rounded-md bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">

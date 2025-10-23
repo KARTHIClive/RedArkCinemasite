@@ -31,7 +31,7 @@ export default function PortfolioSection() {
           {portfolioImages.map((image, index) => (
             <div
               key={index}
-              className="relative overflow-hidden rounded-md group hover-elevate transition-all duration-300"
+              className="relative overflow-hidden rounded-md group hover-elevate transition-all duration-300 light-reflection"
               data-testid={`image-facility-${index}`}
             >
               <div className="aspect-video overflow-hidden">

@@ -266,6 +266,40 @@
       opacity: 0.9;
     }
   }
+
+  @keyframes light-reflection {
+    0% {
+      transform: translateX(-100%) skewX(-15deg);
+    }
+    100% {
+      transform: translateX(200%) skewX(-15deg);
+    }
+  }
+
+  .light-reflection {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .light-reflection::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(
+      90deg,
+      transparent 0%,
+      rgba(255, 255, 255, 0.03) 40%,
+      rgba(220, 20, 60, 0.15) 50%,
+      rgba(255, 255, 255, 0.03) 60%,
+      transparent 100%
+    );
+    animation: light-reflection 8s ease-in-out infinite;
+    pointer-events: none;
+    z-index: 10;
+  }
 }
 
 /**

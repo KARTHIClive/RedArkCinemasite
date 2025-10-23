@@ -9,7 +9,7 @@ interface ServiceCardProps {
 
 export default function ServiceCard({ title, description, icon: Icon }: ServiceCardProps) {
   return (
-    <Card className="p-6 hover-elevate transition-all duration-300 group" data-testid={`card-service-${title.toLowerCase().replace(/\s+/g, '-')}`}>
+    <Card className="p-6 hover-elevate transition-all duration-300 group light-reflection" data-testid={`card-service-${title.toLowerCase().replace(/\s+/g, '-')}`}>
       <div className="w-12 h-12 rounded-md bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
         <Icon className="w-6 h-6 text-primary" />
       </div>

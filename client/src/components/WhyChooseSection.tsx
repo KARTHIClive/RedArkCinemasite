@@ -45,7 +45,7 @@ export default function WhyChooseSection() {
           {reasons.map((reason) => (
             <Card
               key={reason.number}
-              className="p-8 hover-elevate transition-all duration-300 group"
+              className="p-8 hover-elevate transition-all duration-300 group light-reflection"
               data-testid={`card-reason-${reason.number}`}
             >
               <div className="flex items-start gap-6">

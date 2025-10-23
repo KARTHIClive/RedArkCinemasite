@@ -17,7 +17,7 @@ export default function EquipmentCard({
   icon: Icon,
 }: EquipmentCardProps) {
   return (
-    <Card className="overflow-hidden hover-elevate transition-all duration-300 group" data-testid={`card-equipment-${title.toLowerCase().replace(/\s+/g, '-')}`}>
+    <Card className="overflow-hidden hover-elevate transition-all duration-300 group light-reflection" data-testid={`card-equipment-${title.toLowerCase().replace(/\s+/g, '-')}`}>
       <div className="relative h-48 overflow-hidden">
         <img
           src={image}
