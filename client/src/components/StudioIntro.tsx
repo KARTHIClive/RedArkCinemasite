@@ -3,9 +3,9 @@ export default function StudioIntro() {
     <section className="relative py-12 sm:py-16 md:py-20 lg:py-24 bg-black overflow-hidden">
       <div className="absolute inset-0 flex items-center justify-center">
         <div 
-          className="w-[600px] h-[600px] rounded-full blur-3xl"
+          className="w-[900px] h-[900px] rounded-full blur-3xl"
           style={{
-            background: 'radial-gradient(ellipse at center, rgba(220, 20, 60, 0.35) 0%, rgba(139, 0, 0, 0.20) 30%, transparent 70%)',
+            background: 'radial-gradient(ellipse at center, rgba(220, 20, 60, 0.55) 0%, rgba(139, 0, 0, 0.35) 30%, transparent 70%)',
             animation: 'breathing-light 5s ease-in-out infinite'
           }}
         ></div>
