@@ -22,16 +22,16 @@ export default function Footer() {
 
   return (
     <footer className="bg-background border-t border-border">
-      <div className="max-w-7xl mx-auto px-6 md:px-8 py-16">
-        <div className="grid md:grid-cols-4 gap-12 mb-12">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8 py-12 sm:py-16">
+        <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-8 sm:gap-12 mb-8 sm:mb-12">
           <div>
-            <h3 className="font-display text-2xl text-primary mb-4 tracking-wider">
+            <h3 className="font-display text-xl sm:text-2xl text-primary mb-4 tracking-wider">
               RED ARK CINEMA
             </h3>
             <p className="text-sm text-muted-foreground mb-6">
               Your complete partner for professional cinema production and post-production services.
             </p>
-            <div className="flex gap-3">
+            <div className="flex gap-3 flex-wrap">
               <a
                 href="#"
                 className="w-9 h-9 rounded-md bg-card flex items-center justify-center hover-elevate transition-colors"
@@ -141,8 +141,8 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="pt-8 border-t border-border text-center">
-          <p className="text-sm text-muted-foreground">
+        <div className="pt-6 sm:pt-8 border-t border-border text-center">
+          <p className="text-xs sm:text-sm text-muted-foreground px-4">
             © {currentYear} Red Ark Cinema. All rights reserved.
           </p>
         </div>

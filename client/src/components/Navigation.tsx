@@ -25,10 +25,10 @@ export default function Navigation() {
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border">
-      <div className="max-w-7xl mx-auto px-6 md:px-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8">
         <div className="flex items-center justify-between h-16">
           <Link href="/" data-testid="link-home">
-            <h1 className="font-display text-2xl md:text-3xl tracking-wider text-primary">
+            <h1 className="font-display text-xl sm:text-2xl md:text-3xl tracking-wider text-primary">
               RED ARK CINEMA
             </h1>
           </Link>
@@ -67,13 +67,13 @@ export default function Navigation() {
 
       {isMenuOpen && (
         <div className="md:hidden bg-background border-b border-border">
-          <div className="px-6 py-4 space-y-3">
+          <div className="px-4 sm:px-6 py-4 space-y-2">
             {navItems.map((item) => (
               <button
                 key={item.href}
                 onClick={() => handleNavClick(item.href)}
                 data-testid={`mobile-link-${item.label.toLowerCase()}`}
-                className="block w-full text-left text-foreground hover-elevate px-3 py-2 rounded-md transition-colors"
+                className="block w-full text-left text-foreground hover-elevate px-4 py-3 rounded-md transition-colors font-medium"
               >
                 {item.label}
               </button>
@@ -81,7 +81,7 @@ export default function Navigation() {
             <Button
               onClick={() => handleNavClick("#contact")}
               data-testid="mobile-button-get-quote"
-              className="w-full uppercase tracking-wide"
+              className="w-full uppercase tracking-wide mt-2"
             >
               Get Quote
             </Button>

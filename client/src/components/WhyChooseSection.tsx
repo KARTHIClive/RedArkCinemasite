@@ -30,18 +30,18 @@ export default function WhyChooseSection() {
   ];
 
   return (
-    <section className="py-20 md:py-24 lg:py-32 bg-background">
-      <div className="max-w-7xl mx-auto px-6 md:px-8">
-        <div className="mb-16 text-center">
-          <h2 className="font-display text-4xl md:text-5xl lg:text-6xl text-foreground mb-6 tracking-wide" data-testid="text-why-choose-title">
+    <section className="py-12 sm:py-16 md:py-20 lg:py-24 bg-background">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8">
+        <div className="mb-12 md:mb-16 text-center">
+          <h2 className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-foreground mb-4 sm:mb-6 tracking-wide leading-tight" data-testid="text-why-choose-title">
             WHY CHOOSE RED ARK CINEMA
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto px-4">
             Your trusted partner for professional cinema production
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid sm:grid-cols-2 gap-6 sm:gap-8">
           {reasons.map((reason) => (
             <Card
               key={reason.number}

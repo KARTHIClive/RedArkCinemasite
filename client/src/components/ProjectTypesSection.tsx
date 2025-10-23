@@ -30,22 +30,22 @@ export default function ProjectTypesSection() {
   ];
 
   return (
-    <section className="py-20 md:py-24 lg:py-32 bg-background">
-      <div className="max-w-7xl mx-auto px-6 md:px-8">
-        <div className="mb-16">
-          <div className="flex items-center gap-4 mb-6">
-            <span className="font-display text-primary text-2xl">02.</span>
-            <h2 className="font-display text-4xl md:text-5xl lg:text-6xl text-foreground tracking-wide" data-testid="text-project-types-title">
+    <section className="py-12 sm:py-16 md:py-20 lg:py-24 bg-background">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8">
+        <div className="mb-12 md:mb-16">
+          <div className="flex items-center gap-3 sm:gap-4 mb-6">
+            <span className="font-display text-primary text-xl sm:text-2xl flex-shrink-0">02.</span>
+            <h2 className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-foreground tracking-wide" data-testid="text-project-types-title">
               PROJECT TYPES
             </h2>
-            <div className="flex-1 h-px bg-border ml-4" />
+            <div className="hidden sm:block flex-1 h-px bg-border ml-4" />
           </div>
-          <p className="text-lg text-muted-foreground max-w-3xl">
+          <p className="text-base sm:text-lg text-muted-foreground max-w-3xl">
             We support every stage of your creative journey, from concept to final delivery
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
           {projectTypes.map((project) => (
             <Card
               key={project.title}

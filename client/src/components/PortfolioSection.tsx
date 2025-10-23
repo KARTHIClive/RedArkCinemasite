@@ -12,22 +12,22 @@ export default function PortfolioSection() {
   ];
 
   return (
-    <section id="portfolio" className="py-20 md:py-24 lg:py-32 bg-card">
-      <div className="max-w-7xl mx-auto px-6 md:px-8">
-        <div className="mb-16">
-          <div className="flex items-center gap-4 mb-6">
-            <span className="font-display text-primary text-2xl">03.</span>
-            <h2 className="font-display text-4xl md:text-5xl lg:text-6xl text-foreground tracking-wide" data-testid="text-portfolio-title">
+    <section id="portfolio" className="py-12 sm:py-16 md:py-20 lg:py-24 bg-card">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8">
+        <div className="mb-12 md:mb-16">
+          <div className="flex items-center gap-3 sm:gap-4 mb-6">
+            <span className="font-display text-primary text-xl sm:text-2xl flex-shrink-0">03.</span>
+            <h2 className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-foreground tracking-wide" data-testid="text-portfolio-title">
               OUR FACILITIES
             </h2>
-            <div className="flex-1 h-px bg-border ml-4" />
+            <div className="hidden sm:block flex-1 h-px bg-border ml-4" />
           </div>
-          <p className="text-lg text-muted-foreground max-w-3xl">
+          <p className="text-base sm:text-lg text-muted-foreground max-w-3xl">
             State-of-the-art studios equipped with the latest technology
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-6">
+        <div className="grid sm:grid-cols-2 gap-4 sm:gap-6">
           {portfolioImages.map((image, index) => (
             <div
               key={index}
