@@ -10,7 +10,7 @@ import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-background relative z-10">
+    <div className="min-h-screen relative z-10">
       <Navigation />
       <main>
         <HeroSection />
