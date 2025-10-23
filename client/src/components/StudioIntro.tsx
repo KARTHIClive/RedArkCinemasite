@@ -1,15 +1,18 @@
 export default function StudioIntro() {
   return (
     <section className="relative py-12 sm:py-16 md:py-20 lg:py-24 bg-black overflow-hidden">
-      <div className="absolute inset-0 flex items-center justify-center">
-        <div 
-          className="w-[600px] h-[600px] rounded-full blur-3xl"
-          style={{
-            background: 'radial-gradient(ellipse at center, rgba(220, 20, 60, 0.35) 0%, rgba(139, 0, 0, 0.20) 30%, transparent 70%)',
-            animation: 'breathing-light 5s ease-in-out infinite'
-          }}
-        ></div>
-      </div>
+      <div 
+        className="absolute rounded-full blur-3xl"
+        style={{
+          top: '50%',
+          left: '50%',
+          transform: 'translate(-50%, -50%)',
+          width: '700px',
+          height: '700px',
+          background: 'radial-gradient(ellipse at center, rgba(220, 20, 60, 0.4) 0%, rgba(139, 0, 0, 0.25) 30%, transparent 70%)',
+          animation: 'breathing-light 5s ease-in-out infinite'
+        }}
+      ></div>
       <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 md:px-8">
         <div className="grid md:grid-cols-5 gap-8 md:gap-12 items-center">
           <div className="md:col-span-3">
