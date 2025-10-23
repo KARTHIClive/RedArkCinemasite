@@ -302,7 +302,7 @@
       transparent 65%,
       transparent 100%
     );
-    animation: light-reflection 10s ease-in-out infinite;
+    animation: light-reflection 13s ease-in-out infinite;
     pointer-events: none;
     z-index: 10;
   }
