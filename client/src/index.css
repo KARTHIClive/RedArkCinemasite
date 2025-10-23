@@ -269,10 +269,10 @@
 
   @keyframes light-reflection {
     0% {
-      transform: translateX(-100%) skewX(-15deg);
+      transform: translateX(-150%) skewX(-20deg);
     }
     100% {
-      transform: translateX(200%) skewX(-15deg);
+      transform: translateX(250%) skewX(-20deg);
     }
   }
 
@@ -284,19 +284,25 @@
   .light-reflection::before {
     content: "";
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 50%;
-    height: 100%;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
     background: linear-gradient(
-      90deg,
+      110deg,
       transparent 0%,
-      rgba(255, 255, 255, 0.02) 40%,
-      rgba(255, 255, 255, 0.08) 50%,
-      rgba(255, 255, 255, 0.02) 60%,
+      transparent 35%,
+      rgba(255, 255, 255, 0.01) 40%,
+      rgba(255, 255, 255, 0.03) 45%,
+      rgba(255, 255, 255, 0.08) 48%,
+      rgba(255, 255, 255, 0.12) 50%,
+      rgba(255, 255, 255, 0.08) 52%,
+      rgba(255, 255, 255, 0.03) 55%,
+      rgba(255, 255, 255, 0.01) 60%,
+      transparent 65%,
       transparent 100%
     );
-    animation: light-reflection 8s ease-in-out infinite;
+    animation: light-reflection 10s ease-in-out infinite;
     pointer-events: none;
     z-index: 10;
   }
