@@ -21,19 +21,16 @@ export default function Navigation() {
   };
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-background/50 backdrop-blur-md border-b border-border/50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8">
-        <div className="flex items-center justify-between h-20 sm:h-24 md:h-28">
-          <Link href="/" data-testid="link-home" className="flex items-center gap-3">
+        <div className="flex items-center justify-between h-16 sm:h-18">
+          <Link href="/" data-testid="link-home" className="flex items-center">
             <img 
               src={logoImage} 
               alt="Red Ark Cinema" 
-              className="h-16 sm:h-20 md:h-24 w-auto"
+              className="h-10 sm:h-12 md:h-14 w-auto"
               data-testid="img-logo"
             />
-            <h1 className="font-display text-xl sm:text-2xl md:text-3xl tracking-wider text-primary">
-              RED ARK CINEMA
-            </h1>
           </Link>
 
           <div className="hidden md:flex items-center gap-8">
