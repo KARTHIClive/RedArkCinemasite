@@ -11,6 +11,7 @@ import {
 } from "@/components/ui/select";
 import { Card } from "@/components/ui/card";
 import { MapPin, Phone, Mail, Clock } from "lucide-react";
+import { SiWhatsapp } from "react-icons/si";
 import { useToast } from "@/hooks/use-toast";
 
 export default function ContactSection() {
@@ -207,6 +208,34 @@ export default function ContactSection() {
                   </p>
                 </div>
               </div>
+            </Card>
+
+            <Card className="p-6 light-reflection hover-elevate">
+              <a 
+                href="https://wa.me/919495095048" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="flex items-start gap-4"
+                data-testid="link-whatsapp"
+              >
+                <div className="w-10 h-10 rounded-md bg-primary/10 flex items-center justify-center flex-shrink-0">
+                  <SiWhatsapp className="w-5 h-5 text-primary" />
+                </div>
+                <div>
+                  <h4 className="font-semibold text-foreground mb-1">WhatsApp</h4>
+                  <p className="text-sm text-muted-foreground mb-2">
+                    Chat with us directly
+                  </p>
+                  <Button 
+                    variant="outline" 
+                    size="sm" 
+                    className="uppercase tracking-wide"
+                    data-testid="button-whatsapp"
+                  >
+                    Start Chat
+                  </Button>
+                </div>
+              </a>
             </Card>
 
             <Card className="p-6 light-reflection">
