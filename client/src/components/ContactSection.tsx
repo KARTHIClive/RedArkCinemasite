@@ -202,7 +202,7 @@ export default function ContactSection() {
                 <div>
                   <h4 className="font-semibold text-foreground mb-1">Phone</h4>
                   <p className="text-sm text-muted-foreground">
-                    8330022223<br />
+                    94 950 950 48<br />
                     9845007944
                   </p>
                 </div>
