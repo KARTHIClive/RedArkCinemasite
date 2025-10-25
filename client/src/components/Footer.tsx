@@ -1,6 +1,6 @@
 import { Link } from "wouter";
 import { Facebook, Instagram, Youtube, Linkedin, Twitter } from "lucide-react";
-import logoImage from "@assets/logo red ark_1761408479638.png";
+import logoImage from "@assets/logo red ark_1761408857219.png";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
