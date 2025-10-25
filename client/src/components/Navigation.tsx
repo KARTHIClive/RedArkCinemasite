@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link, useLocation } from "wouter";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import logoImage from "@assets/logo red ark_1761408479638.png";
 
 export default function Navigation() {
   const [location] = useLocation();
@@ -23,10 +24,13 @@ export default function Navigation() {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8">
         <div className="flex items-center justify-between h-16">
-          <Link href="/" data-testid="link-home">
-            <h1 className="font-display text-xl sm:text-2xl md:text-3xl tracking-wider text-primary">
-              RED ARK CINEMA
-            </h1>
+          <Link href="/" data-testid="link-home" className="flex items-center">
+            <img 
+              src={logoImage} 
+              alt="Red Ark Cinema" 
+              className="h-10 sm:h-12 md:h-14 w-auto"
+              data-testid="img-logo"
+            />
           </Link>
 
           <div className="hidden md:flex items-center gap-8">

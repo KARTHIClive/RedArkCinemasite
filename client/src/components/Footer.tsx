@@ -1,5 +1,6 @@
 import { Link } from "wouter";
 import { Facebook, Instagram, Youtube, Linkedin, Twitter } from "lucide-react";
+import logoImage from "@assets/logo red ark_1761408479638.png";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -25,9 +26,12 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8 py-12 sm:py-16">
         <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-8 sm:gap-12 mb-8 sm:mb-12">
           <div>
-            <h3 className="font-display text-xl sm:text-2xl text-primary mb-4 tracking-wider">
-              RED ARK CINEMA
-            </h3>
+            <img 
+              src={logoImage} 
+              alt="Red Ark Cinema" 
+              className="h-12 sm:h-14 w-auto mb-4"
+              data-testid="img-footer-logo"
+            />
             <p className="text-sm text-muted-foreground mb-6">
               Your complete partner for professional cinema production and post-production services.
             </p>
