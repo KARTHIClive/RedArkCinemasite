@@ -28,7 +28,7 @@ export default function Navigation() {
             <img 
               src={logoImage} 
               alt="Red Ark Cinema" 
-              className="h-8 sm:h-10 md:h-12 w-auto"
+              className="h-12 sm:h-14 md:h-16 w-auto"
               data-testid="img-logo"
             />
             <h1 className="font-display text-xl sm:text-2xl md:text-3xl tracking-wider text-primary">
