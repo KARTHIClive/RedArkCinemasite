@@ -267,6 +267,15 @@
     }
   }
 
+  @keyframes lightRayMove {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(100%);
+    }
+  }
+
   @keyframes light-reflection {
     0% {
       transform: translateX(-150%) skewX(-20deg);
