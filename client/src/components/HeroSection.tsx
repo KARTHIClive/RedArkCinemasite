@@ -23,7 +23,7 @@ export default function HeroSection() {
       
       <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 md:px-8 text-center">
         <h1 
-          className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl mb-3 sm:mb-4 leading-tight font-bold" 
+          className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl mb-3 sm:mb-4 font-bold pt-2" 
           data-testid="text-hero-title"
           style={{
             background: 'linear-gradient(135deg, #ffffff 0%, #dc143c 50%, #ffffff 100%)',
@@ -31,16 +31,18 @@ export default function HeroSection() {
             WebkitTextFillColor: 'transparent',
             backgroundClip: 'text',
             textShadow: '0 0 60px rgba(220, 20, 60, 0.5)',
-            filter: 'drop-shadow(0 4px 8px rgba(0,0,0,0.3))'
+            filter: 'drop-shadow(0 4px 8px rgba(0,0,0,0.3))',
+            lineHeight: '1.4'
           }}
         >
           സിനിമ മോഹികളെ... വരൂ ഇങ്ങോട്ട്...
         </h1>
         <p 
-          className="text-xl sm:text-2xl md:text-3xl lg:text-4xl mb-8 sm:mb-10 max-w-3xl mx-auto font-semibold px-2 text-primary leading-tight" 
+          className="text-xl sm:text-2xl md:text-3xl lg:text-4xl mb-8 sm:mb-10 max-w-3xl mx-auto font-semibold px-2 text-primary" 
           data-testid="text-hero-subtitle"
           style={{
-            textShadow: '0 0 40px rgba(220, 20, 60, 0.4), 0 2px 4px rgba(0,0,0,0.5)'
+            textShadow: '0 0 40px rgba(220, 20, 60, 0.4), 0 2px 4px rgba(0,0,0,0.5)',
+            lineHeight: '1.4'
           }}
         >
           നമുക്ക് ഒരു അടിപൊളി പടം ചെയ്യാം...
