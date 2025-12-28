@@ -23,40 +23,29 @@ export default function HeroSection() {
       
       <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 md:px-8 text-center">
         <div 
-          className="relative inline-block px-8 sm:px-12 py-6 sm:py-8 rounded-lg overflow-hidden"
+          className="relative inline-block px-10 sm:px-16 py-8 sm:py-10 rounded-xl"
           style={{
-            background: 'rgba(0, 0, 0, 0.6)',
-            backdropFilter: 'blur(8px)'
+            background: 'rgba(0, 0, 0, 0.5)',
+            backdropFilter: 'blur(12px)',
+            border: '1px solid rgba(255, 255, 255, 0.1)',
+            boxShadow: '0 0 60px rgba(220, 20, 60, 0.15), inset 0 0 30px rgba(0, 0, 0, 0.3)'
           }}
         >
-          <div 
-            className="absolute inset-0 pointer-events-none"
-            style={{
-              background: 'linear-gradient(110deg, transparent 0%, transparent 40%, rgba(255,255,255,0.1) 45%, rgba(255,255,255,0.3) 50%, rgba(255,255,255,0.1) 55%, transparent 60%, transparent 100%)',
-              animation: 'lightRayMove 4s ease-in-out infinite'
-            }}
-          />
           <h1 
-            className="relative text-2xl sm:text-3xl md:text-4xl lg:text-5xl mb-3 sm:mb-4 font-bold pt-2" 
+            className="text-shimmer text-2xl sm:text-3xl md:text-4xl lg:text-5xl mb-4 sm:mb-5 font-bold pt-2" 
             data-testid="text-hero-title"
             style={{
-              background: 'linear-gradient(135deg, #ffffff 0%, #dc143c 50%, #ffffff 100%)',
-              WebkitBackgroundClip: 'text',
-              WebkitTextFillColor: 'transparent',
-              backgroundClip: 'text',
-              textShadow: '0 0 60px rgba(220, 20, 60, 0.5)',
-              filter: 'drop-shadow(0 4px 8px rgba(0,0,0,0.3))',
-              lineHeight: '1.4'
+              lineHeight: '1.5',
+              filter: 'drop-shadow(0 4px 8px rgba(0,0,0,0.5))'
             }}
           >
             സിനിമ മോഹികളെ... വരൂ ഇങ്ങോട്ട്...
           </h1>
           <p 
-            className="relative text-xl sm:text-2xl md:text-3xl lg:text-4xl mb-0 max-w-3xl mx-auto font-semibold px-2 text-primary" 
+            className="text-glow-red text-xl sm:text-2xl md:text-3xl lg:text-4xl mb-0 max-w-3xl mx-auto font-semibold px-2 text-primary" 
             data-testid="text-hero-subtitle"
             style={{
-              textShadow: '0 0 40px rgba(220, 20, 60, 0.4), 0 2px 4px rgba(0,0,0,0.5)',
-              lineHeight: '1.4'
+              lineHeight: '1.5'
             }}
           >
             നമുക്ക് ഒരു അടിപൊളി പടം ചെയ്യാം...
