@@ -23,7 +23,7 @@ export default function HeroSection() {
       
       <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 md:px-8 text-center">
         <h1 
-          className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl mb-6 sm:mb-8 leading-relaxed font-bold" 
+          className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl mb-3 sm:mb-4 leading-tight font-bold" 
           data-testid="text-hero-title"
           style={{
             background: 'linear-gradient(135deg, #ffffff 0%, #dc143c 50%, #ffffff 100%)',
@@ -37,7 +37,7 @@ export default function HeroSection() {
           സിനിമ മോഹികളെ... വരൂ ഇങ്ങോട്ട്...
         </h1>
         <p 
-          className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl mb-10 sm:mb-14 max-w-4xl mx-auto font-semibold px-2 text-primary" 
+          className="text-xl sm:text-2xl md:text-3xl lg:text-4xl mb-8 sm:mb-10 max-w-3xl mx-auto font-semibold px-2 text-primary leading-tight" 
           data-testid="text-hero-subtitle"
           style={{
             textShadow: '0 0 40px rgba(220, 20, 60, 0.4), 0 2px 4px rgba(0,0,0,0.5)'
