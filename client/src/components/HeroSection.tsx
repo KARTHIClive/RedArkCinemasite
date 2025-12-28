@@ -22,11 +22,11 @@ export default function HeroSection() {
       <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/70" />
       
       <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 md:px-8 text-center">
-        <h1 className="font-display text-4xl sm:text-5xl md:text-7xl lg:text-8xl text-white mb-4 sm:mb-6 tracking-wider leading-tight" data-testid="text-hero-title">
-          RED ARK CINEMA
+        <h1 className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-white mb-4 sm:mb-6 tracking-wider leading-tight" data-testid="text-hero-title">
+          സിനിമ മോഹികളെ... വരൂ ഇങ്ങോട്ട്...
         </h1>
-        <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-white/90 mb-8 sm:mb-12 max-w-3xl mx-auto font-light px-2" data-testid="text-hero-subtitle">
-          Complete Cinema Solutions | Production to Post-Production
+        <p className="text-xl sm:text-2xl md:text-3xl lg:text-4xl text-white/90 mb-8 sm:mb-12 max-w-3xl mx-auto font-light px-2" data-testid="text-hero-subtitle">
+          നമുക്ക് ഒരു അടിപൊളി പടം ചെയ്യാം...
         </p>
         
         <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center px-4">
