@@ -1,6 +1,7 @@
 import Navigation from "@/components/Navigation";
 import HeroSection from "@/components/HeroSection";
 import StudioIntro from "@/components/StudioIntro";
+import ShowreelVideo from "@/components/ShowreelVideo";
 import ServicesSection from "@/components/ServicesSection";
 import ProjectTypesSection from "@/components/ProjectTypesSection";
 import PortfolioSection from "@/components/PortfolioSection";
@@ -15,6 +16,7 @@ export default function Home() {
       <main>
         <HeroSection />
         <StudioIntro />
+        <ShowreelVideo />
         <ServicesSection />
         <ProjectTypesSection />
         <PortfolioSection />
