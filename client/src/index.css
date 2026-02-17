@@ -258,6 +258,23 @@
     }
   }
 
+  @keyframes ambient-breathe {
+    0%, 100% {
+      opacity: 0.4;
+      filter: blur(48px);
+      transform: scale(1.05);
+    }
+    50% {
+      opacity: 0.75;
+      filter: blur(64px);
+      transform: scale(1.12);
+    }
+  }
+
+  .animate-ambient-breathe {
+    animation: ambient-breathe 4s ease-in-out infinite;
+  }
+
   @keyframes breathing-light-secondary {
     0%, 100% {
       opacity: 0.5;

@@ -54,7 +54,7 @@ export default function ShowreelVideo() {
               playsInline
               preload="auto"
               aria-hidden="true"
-              className="absolute -inset-4 w-[calc(100%+2rem)] h-[calc(100%+2rem)] object-cover blur-3xl opacity-60 scale-105 pointer-events-none"
+              className="absolute -inset-4 w-[calc(100%+2rem)] h-[calc(100%+2rem)] object-cover blur-3xl opacity-60 scale-105 pointer-events-none animate-ambient-breathe"
               data-testid="video-ambient"
             >
               <source src="/videos/showreel.mp4" type="video/mp4" />
