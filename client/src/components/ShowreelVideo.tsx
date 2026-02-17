@@ -6,7 +6,7 @@ export default function ShowreelVideo() {
       <div className="max-w-5xl mx-auto px-4 sm:px-6 md:px-8">
         <div className="mb-8 md:mb-12 text-center">
           <h2 className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-foreground tracking-wide" data-testid="text-showreel-title">
-            OUR COLOUR GRADING
+            SHOW REELS
           </h2>
           <p className="text-base sm:text-lg text-muted-foreground mt-4 max-w-2xl mx-auto">
             Experience the cinematic excellence of Red Ark Cinema
