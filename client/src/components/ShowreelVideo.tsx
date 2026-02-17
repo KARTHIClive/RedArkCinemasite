@@ -3,6 +3,7 @@ import { useRef, useEffect, useState } from "react";
 export default function ShowreelVideo() {
   const sectionRef = useRef<HTMLDivElement>(null);
   const videoRef = useRef<HTMLVideoElement>(null);
+  const ambientRef = useRef<HTMLVideoElement>(null);
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
@@ -24,9 +25,11 @@ export default function ShowreelVideo() {
   }, []);
 
   useEffect(() => {
-    if (isVisible && videoRef.current) {
+    if (isVisible && videoRef.current && ambientRef.current) {
       videoRef.current.load();
+      ambientRef.current.load();
       videoRef.current.play().catch(() => {});
+      ambientRef.current.play().catch(() => {});
     }
   }, [isVisible]);
 
@@ -41,21 +44,38 @@ export default function ShowreelVideo() {
             Experience the cinematic excellence of Red Ark Cinema
           </p>
         </div>
-        <div className="relative rounded-md overflow-hidden bg-black">
+        <div className="relative rounded-md">
           {isVisible && (
             <video
-              ref={videoRef}
+              ref={ambientRef}
               autoPlay
               loop
               muted
               playsInline
               preload="auto"
-              className="w-full h-auto object-cover"
-              data-testid="video-showreel"
+              aria-hidden="true"
+              className="absolute -inset-4 w-[calc(100%+2rem)] h-[calc(100%+2rem)] object-cover blur-3xl opacity-60 scale-105 pointer-events-none"
+              data-testid="video-ambient"
             >
               <source src="/videos/showreel.mp4" type="video/mp4" />
             </video>
           )}
+          <div className="relative rounded-md overflow-hidden z-10">
+            {isVisible && (
+              <video
+                ref={videoRef}
+                autoPlay
+                loop
+                muted
+                playsInline
+                preload="auto"
+                className="w-full h-auto object-cover"
+                data-testid="video-showreel"
+              >
+                <source src="/videos/showreel.mp4" type="video/mp4" />
+              </video>
+            )}
+          </div>
         </div>
       </div>
     </section>
