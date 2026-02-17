@@ -12,13 +12,15 @@ export default function ShowreelVideo() {
             Experience the cinematic excellence of Red Ark Cinema
           </p>
         </div>
-        <div className="relative rounded-md overflow-hidden aspect-video">
+        <div className="relative rounded-md overflow-hidden">
           <video
             src={showreelVideo}
-            controls
+            autoPlay
+            loop
+            muted
             playsInline
-            preload="metadata"
-            className="w-full h-full object-cover"
+            preload="auto"
+            className="w-full h-auto object-cover"
             data-testid="video-showreel"
           />
         </div>
