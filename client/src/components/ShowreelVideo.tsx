@@ -1,5 +1,3 @@
-import showreelVideo from "@assets/RED_ARK_CINEMA_COLOUR_GRADE_1771307716023.mp4";
-
 export default function ShowreelVideo() {
   return (
     <section className="relative py-12 sm:py-16 md:py-20 lg:py-24 bg-black overflow-hidden">
@@ -14,7 +12,7 @@ export default function ShowreelVideo() {
         </div>
         <div className="relative rounded-md overflow-hidden">
           <video
-            src={showreelVideo}
+            src="/videos/showreel.mp4"
             autoPlay
             loop
             muted
