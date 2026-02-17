@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link, useLocation } from "wouter";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Download } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import logoImage from "@assets/logo red ark_1761408857219.png";
 
@@ -46,6 +46,16 @@ export default function Navigation() {
                 {item.label}
               </Link>
             ))}
+            <a href="/downloads/Red_Ark_Cinema_Brochure.pdf" download>
+              <Button
+                variant="outline"
+                data-testid="button-header-brochure"
+                className="uppercase tracking-wide gap-2"
+              >
+                <Download className="w-4 h-4" />
+                Brochure
+              </Button>
+            </a>
             <Link href="/contact">
               <Button
                 data-testid="button-get-quote"
@@ -84,6 +94,16 @@ export default function Navigation() {
                 {item.label}
               </Link>
             ))}
+            <a href="/downloads/Red_Ark_Cinema_Brochure.pdf" download onClick={handleNavClick}>
+              <Button
+                variant="outline"
+                data-testid="mobile-button-brochure"
+                className="w-full uppercase tracking-wide mt-2 gap-2"
+              >
+                <Download className="w-4 h-4" />
+                Brochure
+              </Button>
+            </a>
             <Link href="/contact" onClick={handleNavClick}>
               <Button
                 data-testid="mobile-button-get-quote"
